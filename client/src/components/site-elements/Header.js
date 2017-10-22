@@ -12,11 +12,11 @@ const styles = {
     }
 };
 
-export default class Resume extends React.Component {
+export default class Header extends React.Component {
     render() {
         return (
             <div>
-                Resume Content
+                Header
             </div>
         );
     }
