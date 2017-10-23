@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Radium from 'radium';
-import Color from 'color';
+import color from 'color';
 
 const styles = {
     base: {
@@ -15,9 +15,15 @@ const styles = {
 export default class Footer extends React.Component {
     render() {
         return (
-            <div>
-                Footer
-            </div>
+            <div className='col-8 ml-auto mr-auto' id='footer'>
+                <div className='row text-center' id='footerRow'>
+                    <div className='col-12'>
+                        <Router>
+                            <h5><Link style={styles.base} to='https://thompsonjonm.github.io/' target='_blank'> © 2017 Jonathan Thompson </Link></ h5>
+                        </ Router>
+                    </ div>
+                </ div>
+            </ div>
         );
     }
 }
