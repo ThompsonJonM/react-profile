@@ -19,8 +19,8 @@ li {
 /* Classes */
 
 .headerImg {
-    height: 75px;
-	width: 75px;
+    height: 60px;
+	width: 60px;
 	margin-right: 12px;
 }
 
@@ -42,7 +42,7 @@ li {
 	position: absolute;
 	visibility: hidden;
     height: 235px;
-    padding-top: 20px;
+    padding-top: 5%;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -57,7 +57,7 @@ li {
 	position: absolute;
 	visibility: hidden;
     height: 235px;
-    padding-top: 40px;
+    padding-top: 5%;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -71,6 +71,10 @@ li {
 .left-col {
     position: fixed;
     overflow: hidden;
+}
+
+.nav-link {
+    font-weight: bold;
 }
 
 .projectImg {
@@ -91,6 +95,11 @@ li {
 	opacity: 0.85;
 }
 
+.resumeEntry {
+    font-size: 11px;
+    font-weight: bold;
+}
+
 /* Individual IDs */
 
 #aboutMePhoto {
@@ -98,9 +107,10 @@ li {
 	opacity: 0.85;
 }
 
-/* #contentTray {
-    margin-top: -25px;
-} */
+#navList {
+    margin-top: -75px;
+    margin-left: -50px;
+}
 
 #footer {
     background-color: rgb(255, 255, 255);
@@ -109,4 +119,50 @@ li {
 
 #headerText {
     margin-top: 125px;
+}
+
+@media screen and (max-width: 1350px) {
+    #navList {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.row-offcanvas {
+	  position: relative;
+	  -webkit-transition: all .25s ease-out;
+		   -o-transition: all .25s ease-out;
+			  transition: all .25s ease-out;
+	}
+  
+	.row-offcanvas-left {
+	  left: 0;
+	}
+  
+	.row-offcanvas-left
+	.sidebar-offcanvas {
+	  left: -100%; /* 12 columns */
+	}
+  
+	.row-offcanvas-left.active
+	.sidebar-offcanvas {
+	  left: -15%; /* 6 columns */
+	}
+  
+	.row-offcanvas-left.active {
+	  left: 25%; /* 6 columns */
+	}
+  
+	.sidebar-offcanvas {
+	  position: absolute;
+	  top: 0;
+	  width: 25%; /* 6 columns */
+	}
+
+}
+
+@media screen and (max-width: 575px) {
+    #aboutMeText {
+        margin-top: 40px;
+    }
 }

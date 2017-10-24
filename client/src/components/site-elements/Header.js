@@ -19,8 +19,9 @@ export default class Header extends React.Component {
     render() {
         return (
             <div className="col-lg-12 text-center" id='headerText'>
-                <h2><b>Jonathan Thompson</b></h2>
-                <h5><b>Web Developer | Chicago, IL</b></h5>
+                <h1><b>Jonathan Thompson</b></h1>
+                <h6><b>Web Developer | Chicago, IL</b></h6>
+                <h7><b>Testing and styling are what I do best</b></h7>
 
                 <br/>
                 <br/>
@@ -40,6 +41,8 @@ export default class Header extends React.Component {
                 <p className="text-center d-md-none">
                     <button type='button' className="btn btn-dark btn-sm" data-toggle='offcanvas'>Navigation</button>
                 </p>
+
+                <br/>
 
             </div>
         );

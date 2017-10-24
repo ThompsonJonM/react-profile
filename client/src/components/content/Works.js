@@ -24,14 +24,13 @@ export default class Works extends React.Component {
     render() {
         return (
             // Works Column
-            <div className="col-10 ml-sm-auto col-md-9 ml-md-auto ml-lg-auto mr-auto" id="mainBodySection">
+            <div className="col-12 ml-sm-auto col-md-9 ml-md-auto ml-lg-auto mr-auto" id="mainBodySection">
                 <div className='row'>
                     <div className="col-12 ml-sm-auto ml-md-auto ml-lg-auto">
                         <h5 className='text-center'><strong>A sampling of my completed web projects</strong></h5>
                     </div>
                 </div>
 
-                <br/>
                 <br/>
                 <br/>
 
@@ -55,7 +54,7 @@ export default class Works extends React.Component {
                         </div>
 
                         <div className="row">
-                            <div className="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 imageBlock">
+                            <div className="col-12 col-lg-7 col-xl-7 imageBlock">
                                 <Link to="https://thompsonjonm.github.io/project-one" target='_blank' className="project">
                                     <div className='row'>
                                         <img src={moodsicImage} alt="moodsic display" className="img-fluid projectImg"/>
@@ -71,11 +70,11 @@ export default class Works extends React.Component {
                             </div>
                             
 
-                            <div className="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 imageBlock">
+                            <div className="col-12 col-lg-5 col-xl-5 imageBlock">
                                 <Link to="https://thompsonjonm.github.io/friend-finder" target="_blank">
                                     <div className='row'>
-                                        <img className="col-11 ml-auto projectImgShort" src={fullStackImage} alt="friend-finder display"/>
-                                        <h4 className="col-11 ml-auto text-center imgDescriptShort">
+                                        <img className="col-12 col-lg-11 col-xl-11 ml-auto projectImgShort" src={fullStackImage} alt="friend-finder display"/>
+                                        <h4 className="col-12 col-lg-11 col-xl-11 ml-auto text-center imgDescriptShort">
                                             <br/>
                                             <br/>
                                             <br/>
@@ -88,23 +87,23 @@ export default class Works extends React.Component {
                         </div>
 
                         <div className='row'>
-                            <div className="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 imageBlock">
+                            <div className="col-12 col-lg-5 col-xl-5 imageBlock">
                                 <Link to='https://thompsonjonm.github.io/train-scheduler' target='_blank'>
                                     <div className='row'>
-                                        <img className="col-11 mr-auto projectImgShort" src={trainSchedImage} alt='scheduler display'/>
-                                        <h4 className="col-11 mr-auto text-center imgDescriptShort">
+                                        <img className="col-12 col-lg-11 col-xl-11  mr-auto projectImgShort" src={trainSchedImage} alt='scheduler display'/>
+                                        <h4 className="col-12 col-lg-11 col-xl-11  mr-auto text-center imgDescriptShort">
                                             <br/>
                                             <br/>
                                             <br/>
                                             <b>Train-scheduler is a web-app built with 
-                                                Moment.JS to update train times in real time.
+                                                Moment.JS and jQuery.
                                             </b>
                                         </h4>
                                     </div>
                                 </Link>
                             </div>
 
-                            <div className="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 imageBlock">
+                            <div className="col-12 col-lg-7 col-xl-7 imageBlock">
                                 <Link to="https://thompsonjonm.github.io/giphy-app" target="_blank">
                                     <div className='row'>
                                         <img src={giphyImage} alt="giphy app display" className="img-fluid projectImg"/>
@@ -121,7 +120,7 @@ export default class Works extends React.Component {
                         </div>
 
                         <div className="row">
-                            <div className="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 imageBlock">
+                            <div className="col-12 col-lg-7 col-xl-7 imageBlock">
                                 <Link to='https://thompsonjonm.github.io/burger' target='_blank'>
                                     <div className='row'>
                                         <img src={databaseImage} alt="burger app display" className="img-fluid projectImg"/>
@@ -136,11 +135,11 @@ export default class Works extends React.Component {
                                 </Link>
                             </div>
 
-                            <div className="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 imageBlock">
+                            <div className="col-12 col-lg-5 col-xl-5 imageBlock">
                                 <Link to='https://thompsonjonm.github.io/liri-app' target='_blank'>
                                     <div className='row'>
-                                        <img className="col-11 ml-auto projectImgShort" src={liriImage} alt="liri app display"/>
-                                        <h4 className="col-11 ml-auto text-center imgDescriptShort">
+                                        <img className="col-12 col-lg-11 col-xl-11  ml-auto projectImgShort" src={liriImage} alt="liri app display"/>
+                                        <h4 className="col-12 col-lg-11 col-xl-11  ml-auto text-center imgDescriptShort">
                                             <br/>
                                             <br/>
                                             <br/>

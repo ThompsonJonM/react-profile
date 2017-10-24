@@ -23,13 +23,13 @@ export default class Navbar extends React.Component {
     render() {
         return (
             <Router>
-                <div>
-                    <ul className='col-2 mr-auto nav navbar-nav left-col' id='navList' alt='Navigation Listing'>
-                        <li><Link style={styles.base} to='/'> About Me </Link></ li>
-                        <li><Link style={styles.base} to='/works'> Works </Link></li>
-                        <li><Link style={styles.base} to='/testing'> QA Testing </Link></li>
-                        <li><Link style={styles.base} to='/resume'> Resume </Link></li>
-                        <li><Link style={styles.base} to='/contact'> Contact Me </Link></li>
+                <div className='row row-offcanvas row-offcanvas-left'>
+                    <ul className='col-2 mr-auto nav navbar-nav sidebar-offcanvas text-center left-col' id='navList' alt='Navigation Listing'>
+                        <li><Link className='nav-link' style={styles.base} to='/'> ABOUT ME </Link></ li>
+                        <li><Link className='nav-link' style={styles.base} to='/works'> WORKS </Link></li>
+                        <li><Link className='nav-link' style={styles.base} to='/testing'> QA TESTING </Link></li>
+                        <li><Link className='nav-link' style={styles.base} to='/resume'> RESUME </Link></li>
+                        <li><Link className='nav-link' style={styles.base} to='/contact'> CONTACT ME </Link></li>
                     </ ul>
                     <div className='col-10 ml-auto mr-auto right-col' id='contentTray' alt='Main Content'>
                         <Route exact path='/' component={ Main } />

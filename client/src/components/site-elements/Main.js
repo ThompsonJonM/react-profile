@@ -18,7 +18,7 @@ export default class Main extends React.Component {
     render() {
         return (
             // Main Body Column
-            <div className="col-10 ml-sm-auto col-md-9 ml-md-auto ml-lg-auto mr-auto" id="mainBodySection">
+            <div className="col-12 ml-sm-auto col-md-9 ml-md-auto ml-lg-auto mr-auto" id="mainBodySection">
                 <div className="row">
                     <div className="col-12 col-sm-6 ml-sm-auto col-md-6 ml-md-auto col-lg-6 ml-lg-auto">
                         <img src={profilePic} className='img-fluid' id='aboutMePhoto' alt={profilePic}/>
