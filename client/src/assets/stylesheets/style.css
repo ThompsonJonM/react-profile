@@ -1,0 +1,112 @@
+/* Global */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Slab', serif;
+}
+
+btn {
+    height: 50%;
+}
+
+li {
+    margin-top: 20px;
+}
+
+/* Classes */
+
+.headerImg {
+    height: 75px;
+	width: 75px;
+	margin-right: 12px;
+}
+
+.imageBlock {
+	position: relative;
+}
+
+.imageBlock:hover .imgDescriptWide{
+	opacity: 1.0;
+	visibility: visible;
+}
+
+.imageBlock:hover .imgDescriptShort{
+	opacity: 1.0;
+	visibility: visible;
+}
+
+.imgDescriptShort {
+	position: absolute;
+	visibility: hidden;
+    height: 235px;
+    padding-top: 20px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	opacity: 0;
+	transition: opacity .2s, visibility .2s;
+}
+
+.imgDescriptWide {
+	position: absolute;
+	visibility: hidden;
+    height: 235px;
+    padding-top: 40px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	opacity: 0;
+	transition: opacity .2s, visibility .2s;
+}
+
+.left-col {
+    position: fixed;
+    overflow: hidden;
+}
+
+.projectImg {
+	margin-bottom: .75rem;
+	max-height: 235px;
+	min-height: 235px;
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.85;
+}
+
+.projectImgShort {
+	margin-bottom: .75rem;
+	max-height: 235px;
+	min-height: 235px;
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.85;
+}
+
+/* Individual IDs */
+
+#aboutMePhoto {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.85;
+}
+
+/* #contentTray {
+    margin-top: -25px;
+} */
+
+#footer {
+    background-color: rgb(255, 255, 255);
+    margin: 100px 0 75px 0;
+}
+
+#headerText {
+    margin-top: 125px;
+}

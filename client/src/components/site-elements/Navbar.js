@@ -24,14 +24,14 @@ export default class Navbar extends React.Component {
         return (
             <Router>
                 <div>
-                    <ul className='col-2 mr-auto nav navbar-nav' id='navList' alt='Navigation Listing'>
+                    <ul className='col-2 mr-auto nav navbar-nav left-col' id='navList' alt='Navigation Listing'>
                         <li><Link style={styles.base} to='/'> About Me </Link></ li>
                         <li><Link style={styles.base} to='/works'> Works </Link></li>
                         <li><Link style={styles.base} to='/testing'> QA Testing </Link></li>
                         <li><Link style={styles.base} to='/resume'> Resume </Link></li>
                         <li><Link style={styles.base} to='/contact'> Contact Me </Link></li>
                     </ ul>
-                    <div className='col-10 ml-auto mr-auto' id='contentTray' alt='Main Content'>
+                    <div className='col-10 ml-auto mr-auto right-col' id='contentTray' alt='Main Content'>
                         <Route exact path='/' component={ Main } />
                         <Route path='/works' component={ Works } />
                         <Route path='/testing' component={ Testing } />
