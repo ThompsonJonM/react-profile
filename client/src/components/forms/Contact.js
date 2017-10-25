@@ -35,6 +35,7 @@ export default class Contact extends React.Component {
         }
 
         console.log(messageData);
+
     }
 
     render() {
@@ -43,31 +44,30 @@ export default class Contact extends React.Component {
                 <div className='row'>
                     <div className="col-12 ml-sm-auto ml-md-auto ml-lg-auto">
                         <h5 className='text-center'><strong>Feel free to leave me a message!</strong></h5>
-                        <h6 className='text-center'><strong>Or e-mail me at thompson.jonm@gmail.com</strong></h6>
                     </div>
                 </div>
 
                 <br/>
                 <br/>
 
-                <form className='col-12 ml-auto mr-auto' onSubmit={this.handleSubmit}>
+                <form className='col-12 ml-auto mr-auto' onSubmit={this.handleSubmit} method='POST' action='http://formspree.io/thompson.jonm@gmail.com'>
                     <div className='row formRow'>
                         <div className='col-12 col-md-6 ml-auto mr-auto form-group'>
                             <label className='h5'> Name </ label>
-                            <input className='form-control' value={this.state.name} onChange={this.handleChange} type='text' name='name' placeholder="Enter your name." required />
+                            <input className='form-control' value={this.state.name} onChange={this.handleChange} type='name' name='name' placeholder="Enter your name." required />
                         </ div>
 
                         <div className='col-12 col-md-6 ml-auto mr-auto form-group'>
                             <label className='h5'> E-Mail </ label>
-                            <input className='form-control' value={this.state.email} onChange={this.handleChange} type='text' name='email' placeholder='Enter an email.' required />
+                            <input className='form-control' value={this.state.email} onChange={this.handleChange} type='email' name='email' placeholder='Enter an email.' required />
                         </ div>
 
                         <div className='col-12 ml-auto mr-auto form-group'>
                             <label className='h5'> Leave Me a Message </ label>
-                            <textarea className='form-control' value={this.state.message} onChange={this.handleChange} type='text' name='message' rows='10' placeholder='Enter a message.' required />
+                            <textarea className='form-control' value={this.state.message} onChange={this.handleChange} type='message' name='message' rows='10' placeholder='Enter a message.' required />
                         </ div>
 
-                        <input type='submit' value='Submit' className='col-4 ml-auto mr-auto btn btn-dark' />
+                        <button type='submit' className='col-4 ml-auto mr-auto btn btn-dark'> Submit </button>
                     </ div>
                 </ form>
             </div>

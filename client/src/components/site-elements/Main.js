@@ -43,7 +43,7 @@ export default class Main extends React.Component {
                             <b>I currently work as a Quality Assurance Manager for a medical
                             engineering firm where I specialize in documentation and regulatory compliance.
                             I am currently seeking new and exciting opportunities within the fields of 
-                            software quality assurance and software development.</b>
+                            software quality assurance and web development.</b>
                         </p>
                     </div>
                 </div>

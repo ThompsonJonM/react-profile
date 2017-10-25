@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Radium from 'radium';
 import Color from 'color';
 
@@ -17,6 +17,15 @@ export default class Resume extends React.Component {
         return (
             // Main Body Column
             <div className="col-12 ml-sm-auto col-md-9 ml-md-auto ml-lg-auto mr-auto" id="mainBodySection">
+                <div className='row text-center'>
+                    <Router>
+                        <h5 className='col-12'><b><Link to='mailto:thompson.jonm@gmail.com' target='_blank' style={styles.base} > thompson.jonm@gmail.com </Link> | 585.259.5639 </b></h5>
+                    </Router>
+                </div>
+
+                <br/>
+                <br/>
+
                 <div className="row">
                     <div className="col-12 col-md-4 ml-md-auto mr-md-auto col-lg-3 ml-lg-auto mr-lg-auto" id='resumeHeaderText'>
                         <h4><b>
