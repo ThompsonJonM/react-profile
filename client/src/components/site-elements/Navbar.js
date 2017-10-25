@@ -9,6 +9,7 @@ import Works from '../content/Works';
 import Testing from '../content/Testing';
 import Resume from '../content/Resume';
 import Contact from '../forms/Contact';
+import ContactSubmit from '../forms/ContactSubmit';
 
 const styles = {
     base: {
@@ -37,6 +38,7 @@ export default class Navbar extends React.Component {
                         <Route path='/testing' component={ Testing } />
                         <Route path='/resume' component={ Resume } />
                         <Route path='/contact' component={ Contact } />
+                        <Route path='/contact-submit' component={ ContactSubmit } />
                     </ div>
                 </div>
             </Router>

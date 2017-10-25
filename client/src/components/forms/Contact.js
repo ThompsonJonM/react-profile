@@ -1,4 +1,5 @@
 import React from 'react';
+import Helper from '../utilities/helper';
 
 export default class Contact extends React.Component {
     constructor(props) {
@@ -8,7 +9,9 @@ export default class Contact extends React.Component {
             name: '',
             email: '',
             message: ''
-        }
+        };
+
+        this.addHelper = new Helper();
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -28,13 +31,16 @@ export default class Contact extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        let messageData = {
+        let contactData = {
             name: this.state.name,
             email: this.state.email,
             message: this.state.message
         }
 
-        console.log(messageData);
+        console.log(contactData);
+
+        this.addHelper.sendContactData(contactData);
+        this.props.history.push('/contact-submit');
     }
 
     render() {
