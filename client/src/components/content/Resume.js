@@ -19,7 +19,9 @@ export default class Resume extends React.Component {
             <div className="col-12 ml-sm-auto col-md-9 ml-md-auto ml-lg-auto mr-auto" id="mainBodySection">
                 <div className='row text-center'>
                     <Router>
-                        <h5 className='col-12'><b><Link to='mailto:thompson.jonm@gmail.com' target='_blank' style={styles.base} > thompson.jonm@gmail.com </Link> | 585.259.5639 </b></h5>
+                        <h5 className='col-12'><b><Link to='mailto:thompson.jonm@gmail.com' target='_blank' style={styles.base} > thompson.jonm@gmail.com </Link>
+                        <hr/>
+                        585.259.5639 </b></h5>
                     </Router>
                 </div>
 
@@ -183,7 +185,7 @@ export default class Resume extends React.Component {
                                         <li>Javascript</li>
                                         <li>HTML 5</li>
                                         <li>CSS 3</li>
-                                        <li>MongoDB</li>
+                                        <li>MongoDB/NoSQL</li>
                                         <li>MySQL</li>
                                     </ul>
                                 </b>
@@ -196,7 +198,7 @@ export default class Resume extends React.Component {
                                         <li>React Framework</li>
                                         <li>Boostrap 3/4 Framework</li>
                                         <li>Materialize Framework</li>
-                                        <li>Selenium Webdriver</li>
+                                        <li>Heroku App Platform</li>
                                     </ul>
                                 </b>
                             </div>
@@ -208,6 +210,7 @@ export default class Resume extends React.Component {
                                         <li>Sublime Text</li>
                                         <li>Github</li>
                                         <li>Jest/Mocha/Chai</li>
+                                        <li>Selenium Webdriver</li>
                                         <li>Node/NPM</li>
                                     </ul>
                                 </b>
