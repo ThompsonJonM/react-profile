@@ -114,7 +114,9 @@ export default class Resume extends React.Component {
 
                             <p className='col-12 resumeEntryText'>
                                 Operated and maintained all Guidance and Navigational Control systems
-                                aboard C-130H2 aircraft. 
+                                aboard C-130H2 aircraft. Utilized structured problem solving techniques
+                                to develop root-cause analyses of complex aircraft issues. Troubleshot
+                                EMUX and CITS software systems.
                             </p>
                         </div>
                     </div>
@@ -141,8 +143,8 @@ export default class Resume extends React.Component {
 
                             <p className='col-12 resumeEntryText'>
                                 Solid understanding of development tools. Proficient with
-                                Javascript, Node, and React. Experience in unit, integration,
-                                and end-to-end testing.
+                                Javascript, SQL/NoSQL, Node, React, and MERN Stack applications. 
+                                Experience in unit, integration, and end-to-end testing.
                             </p>
                         </div>
 
@@ -190,6 +192,7 @@ export default class Resume extends React.Component {
                             <div className='col-12 col-lg-4 col-xl-4'>
                                 <b>KNOWLEDGE
                                     <ul>
+                                        <li>MERN Stack</li>
                                         <li>React Framework</li>
                                         <li>Boostrap 3/4 Framework</li>
                                         <li>Materialize Framework</li>

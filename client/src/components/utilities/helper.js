@@ -17,5 +17,4 @@ export default class Helper {
             console.log(error);
         });
     }
-
 }

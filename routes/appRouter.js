@@ -27,4 +27,14 @@ appRouter.get('/contacts', function(req, res) {
     });
 });
 
+appRouter.get('/', function(req, res) {
+    Contact.find(function(err, contacts) {
+        if(err) {
+            console.log(err);
+        } else {
+            res.json(contacts);
+        }
+    });
+});
+
 module.exports = appRouter;
