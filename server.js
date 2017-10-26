@@ -8,8 +8,8 @@ const Contact = require('./models/contact');
 
 mongoose.Promise = Promise;
 
-mongoose.connect('mongodb://localhost/profiledb');
-// mongoose.connect('mongodb://thompsonjonm:1Qaz2WsX@ds049854.mlab.com:49854/pigmaticbuilddb')
+// mongoose.connect('mongodb://localhost/profiledb');
+mongoose.connect('mongodb://thompsonjonm:1Qaz2WsX@ds235785.mlab.com:35785/heroku_cxjq2xrj ')
 const db = mongoose.connection;
 
 db.on('error', function(error) {
